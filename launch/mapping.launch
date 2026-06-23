@@ -1,0 +1,24 @@
+<!-- ROS launch template for visual-inertial LiDAR Cartographer mapping. -->
+<launch>
+  <arg name="configuration_directory" default="$(find your_package_name)/config" />
+  <arg name="configuration_basenames" default="cartographer_3d.lua" />
+  <arg name="no_rviz" default="true" />
+
+  <!-- Topic remaps. Adjust to match your hardware drivers. -->
+  <remap from="points2" to="/laserPointCloud" />
+  <remap from="odom" to="/camera/odom/sample" />
+  <remap from="imu" to="/camera/imu" />
+
+  <node name="cartographer_node"
+        pkg="cartographer_ros"
+        type="cartographer_node"
+        args="-configuration_directory $(arg configuration_directory) -configuration_basename $(arg configuration_basenames)"
+        output="screen">
+  </node>
+
+  <node name="cartographer_occupancy_grid_node"
+        pkg="cartographer_ros"
+        type="cartographer_occupancy_grid_node"
+        args="-resolution 0.05"
+        output="screen" />
+</launch>
