@@ -62,8 +62,8 @@ cartographer_assets_writer \
   -configuration_directory config \
   -configuration_basename pointcloud_export.lua \
   -urdf_filename urdf/blimp_sensor_stack.urdf \
-  -bag_filenames YOUR_BAG.bag \
-  -pose_graph_filename YOUR_POSE_GRAPH.pbstream
+  -bag_filenames <your_bag_file>.bag \
+  -pose_graph_filename <your_pose_graph_file>.pbstream
 
 # 4. Evaluate map dimensions against reference measurements
 python3 scripts/evaluate_reconstruction_error.py --reference docs/example_reference_measurements.csv --observed docs/example_observed_measurements.csv
@@ -71,8 +71,7 @@ python3 scripts/evaluate_reconstruction_error.py --reference docs/example_refere
 
 ## Results to add
 
-TODO: Add public-safe images or videos:
-
+Representative public-safe outputs to include:
 - Warehouse point-cloud screenshot
 - Top-down trajectory overlay
 - TF tree diagram
