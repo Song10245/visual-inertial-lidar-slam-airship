@@ -1,6 +1,6 @@
 <!-- ROS launch template for visual-inertial LiDAR Cartographer mapping. -->
 <launch>
-  <arg name="configuration_directory" default="$(find your_package_name)/config" />
+  <arg name="configuration_directory" default="$(env PWD)/config" />
   <arg name="configuration_basenames" default="cartographer_3d.lua" />
   <arg name="no_rviz" default="true" />
 
