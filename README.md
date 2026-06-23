@@ -1,4 +1,8 @@
-# Visual-Inertial LiDAR SLAM for Indoor 3D Reconstruction
+## Repository Note
+
+This repository is a cleaned public portfolio version of my PhD research codebase. It contains selected code structure, configuration examples, documentation and representative processing scripts for a visual-inertial and LiDAR SLAM system used for GPS-denied indoor 3D mapping.
+
+Sensitive data, raw ROS bag files, facility-specific information and unpublished research materials have been removed.# Visual-Inertial LiDAR SLAM for Indoor 3D Reconstruction
 
 This repository documents a ROS-based spatial perception pipeline developed during my PhD research at the University of Bristol. The system combines a vertically mounted 2D LiDAR, Intel RealSense T265 visual-inertial tracking and Cartographer-based pose-graph optimisation to generate 3D maps in GPS-denied indoor environments.
 
