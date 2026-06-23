@@ -4,17 +4,17 @@ Add public-safe results here.
 
 ## Mapping output
 
-TODO: Add screenshot of point cloud or RViz output.
+Public-safe point-cloud or RViz screenshots can be added here after removing sensitive facility details.
 
 ## Trajectory
 
-TODO: Add top-down trajectory overlay.
+A public-safe top-down trajectory overlay can be added here when available.
 
 ## Quantitative evaluation
 
 | Measurement | Reference | Observed | Error |
 |---|---:|---:|---:|
-| TODO | TODO | TODO | TODO |
+| Example dimension | Reference value | Observed value | Percentage error |
 
 ## Failure analysis
 
